@@ -48,6 +48,9 @@ let mapleader=" "
 let g:ycm_always_populate_location_list = 1
 let g:ycm_global_ycm_extra_conf = '~/.nvim/plugged/YouCompleteMe/.ycm_extra_conf.py'
 
+"let make files work if in sub directory
+let &makeprg = 'if [ -f Makefile ]; then make -C %:p:h $*; else make -C %:p:h/.. $*; fi'
+
 nnoremap <leader>f :tab drop 
 nnoremap <leader>gd :YcmCompleter GoTo<CR>
 nnoremap <leader>e :vsp<bar> :wincmd l<bar> :terminal<CR> 
@@ -56,3 +59,4 @@ nnoremap <leader>- :vertical resize -5<CR>
 nnoremap <leader>t :tabn<CR>
 nnoremap <leader>T :tabp<CR>
 nnoremap <leader>wq :wincmd h <bar>:q<CR>
+nnoremap <leader>o :noh<CR>

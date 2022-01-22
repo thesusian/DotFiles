@@ -27,10 +27,14 @@
 *color7:  #a89984
 *color15: #ebdbb2
 
-xterm*faceName: Source Code Pro
-xterm*faceSize: 10.5
+xterm*faceName: JetBrains Mono
+xterm*faceSize: 11
+xterm*selectToClipboard: true
+xterm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)
 
-URxvt.font: xft:Source Code Pro:size=10.5
+URxvt.font: xft:JetBrains Mono:size=11
 URxvt.depth:                      32
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
