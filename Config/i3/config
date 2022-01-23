@@ -229,7 +229,7 @@ set $gray #bcaf8e
 set $darkgray #282828
 
 # blue gruvbox
-font pango:Source Code Pro Semibold 11 
+font pango:Jetbrains mono Semibold 10 
 # class                 border|backgr|text|indicator|child_border
 client.focused          $blue $blue $gray $blue $blue
 client.focused_inactive $darkgray $darkgray $gray $blue $blue
@@ -240,7 +240,7 @@ client.urgent           $red $red $black $red $red
 client.background #000011
 
 # Gaps
-gaps inner 6
+gaps inner 4
 gaps outer -1
 
 smart_gaps on
